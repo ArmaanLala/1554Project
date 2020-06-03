@@ -1,0 +1,2 @@
+# Removes all the compiled code so it can be properly compiled on each machine
+*.o
