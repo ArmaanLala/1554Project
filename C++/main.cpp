@@ -56,9 +56,15 @@ int main()
 
     cout << endl;
 
+    while (length > 20 || length < 1)
+    {
+        cout << "Please input a number between 1 and 20" << endl;
+        cin >> length;
+
+        cout << endl;
+    }
 
     Matrix B{A};
-
 
     // Raises A to the power of the length
     for (int i = 1; i < length; i++)
