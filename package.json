@@ -1,0 +1,16 @@
+{
+  "name": "1554-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Matrix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "mathjs": "^7.0.1",
+    "uniq": "^1.0.1"
+  }
+}
