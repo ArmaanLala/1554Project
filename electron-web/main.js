@@ -15,7 +15,8 @@ app.on('ready', function () {
     mainWindow = new BrowserWindow({
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        width:1920,height:1080,fullscreen: false
     });
     // Load html file
     mainWindow.loadURL(url.format({
@@ -28,9 +29,9 @@ app.on('ready', function () {
     const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
     //Insert Menu
     Menu.setApplicationMenu(mainMenu);
-    mainWindow.webContents.openDevTools();
-    // mainWindow.setResizable(false);
-    // mainWindow.setFullScreen(false);
+    // mainWindow.webContents.openDevTools();
+    mainWindow.setResizable(false);
+    mainWindow.setFullScreen(false);
 });
 
 const mainMenuTemplate = [
