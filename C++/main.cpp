@@ -56,24 +56,28 @@ int main()
 
     cout << endl;
 
+
+    Matrix B{A};
+
+
     // Raises A to the power of the length
     for (int i = 1; i < length; i++)
     {
-        A = A * A;
+        B = B * A;
     }
 
     // Sums up all values and the value of each row.
-    for (int i = 0; i < A.numRows(); i++)
+    for (int i = 0; i < B.numRows(); i++)
     {
-        for (int j = 0; j < A.numCols(); j++)
+        for (int j = 0; j < B.numCols(); j++)
         {
-            sum += A.at(i, j);
-            *(rowSums + i) += A.at(i, j);
+            sum += B.at(i, j);
+            *(rowSums + i) += B.at(i, j);
         }
     }
 
     cout << "The Resulting adjacency matrix for a length of " << length << " is: " << endl
-         << A << endl
+         << B << endl
          << endl
          << "and the total number of possibilites is " << sum << endl;
 
