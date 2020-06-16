@@ -1,0 +1,15 @@
+{
+  "name": "1554electron",
+  "version": "1.0.0",
+  "description": "Electron version of 1554 project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Armaan Lala",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "electron": "^9.0.4"
+  }
+}
