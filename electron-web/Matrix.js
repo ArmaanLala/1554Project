@@ -42,7 +42,7 @@ function clicked() {
     // console.log(btn)
 
     // Calculates the Final Matrix
-    for (i = 1; i < btn; i++) {
+    for (i = 2; i < btn; i++) {
         B = mathjs.multiply(A, B);
     }
 
